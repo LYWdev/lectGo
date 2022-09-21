@@ -42,7 +42,7 @@ func main () {
 			fmt.Println("Don't Know type %T\n",t)
 		}
 	}
-	whatAmI(true)
+	whatAmI("Hello\n"+true)
 	whatAmI(1)
 	whatAmI("hey")
 }
