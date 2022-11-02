@@ -7,8 +7,15 @@ func main() {
 			s += i
 		}
 		return s
+	}	
+	result := sum(1,2,3,4,5,1+4,10)
+
+	min := func(n ...int ) int {
+		s := i
 	}
-	result := sum(1,2,3,4,5)
+	return s
+	resulta := min(1,2,3,4,4)
 	println(result)
+	println(resulta)
 }
 
