@@ -7,9 +7,7 @@
 //  메서드, 인터페이스, 익명함수, 가비지 컬렉터, 포인터 있다.
 
 //  OOP 언어는 대부분 인터페이스가 았다.
-
 //  익명함수( 람다, 함수 리터럴 등으로 표현되는)가 있다.
-
 
 //go는 패키지로 시작해야한다.
 //코드가 속한 패키지를 의미한다.
@@ -23,22 +21,19 @@ package main
 // fmt라는 패키지를 사용한다. 라는 의미 
 // import main 은 불가능하다.
 // 1. 자기자신을 호출할 수 없다.
+
 import "fmt"
 
 //  func로 함수선언 main함수명만 특별한 이름이고 나머지는 클린코드에 따라 자유롭게 작성
 
-func main()
-{
+func main() {
 	// 변수선언 / 변수명 / 데이터 타입/ 값 형태로 선언한다.
-	var a int =10
-	var msg string = "Hello Wrold"
+	//var a int =10
 
 	// fmt패키지 안에 있는 Println 함수로 호출한다.
-	fmt.Println("Hello Go World",a,msg)
+	fmt.Println("Hello Go World")
 
 	//변수 변경
-	a = 30
-	fmt.Println("change :",a)
 
 }
 
