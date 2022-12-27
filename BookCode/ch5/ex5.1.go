@@ -16,6 +16,6 @@ func main(){
 	fmt.Println("Println a :", a, "b:", b, "f:",f,"\n" )
 	//Printf는 주어진 사용자 서식에 맞추어 입력값을 출력한다.
 	fmt.Printf("Print : %d b: %d f:%f\n", a,b,f )
-
 	//
+
 }
