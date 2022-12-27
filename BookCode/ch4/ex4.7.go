@@ -7,6 +7,8 @@ package main
 import "fmt"
 
 func main() {
+	//비트 연산에 의해 제대로 실제 연산값이 표현안됨.
+	//비트연산 주의하면서 변수를 사용해야함.
 	var a float32 = 1234.523
 	var b float32 = 3456.123
 	var c float32 = a*b 
@@ -15,4 +17,5 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Println(c)
+	fmt.Println(d)
 }
