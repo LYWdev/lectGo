@@ -119,3 +119,35 @@ var b int  처럼 초기 값을 선언하지 않는 경우가 있다.
 
 argument 는 매개변수로 복사된다.
 매개변수, 함수내에서 선언된 변수는 함수가 종료되면 변수 범위를 벗어나서 접근하지 못한다.
+
+## 상수를 사용하는 경우
+### 1. 변하면 안되는 값에 사용
+### 2. 코드값으로 사용
+	EX) HTTP 200 : OK 404 : NOT FOUND
+### 3. 아이오타(iota) 키워드로 사용하기 
+
+```go
+import "fmt"
+func main(){
+	const ( 
+		Red 	int = iota
+		Blue 	int = iota
+		Green 	int = iota
+	)
+	const ( 
+		C1 	uint = iota + 5
+		C2 	
+		C3
+	)
+	const ( 
+		BitFlag1 uint = 1 << iot
+		BitFlag2
+		BitFlag3
+		BitFlag4
+	)
+	fmt.Println(Red,Green,Blue)
+	fmt.Println(C1,C2,C3)
+	fmt.Println(BitFlag1,BitFlag2,BitFlag3,BitFlag4)
+}
+```
+<img src = /src/ex8.3.png>
