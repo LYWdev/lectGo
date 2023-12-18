@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func add(a, b int){
+func add(a, b int)int{
 	return a+b
 }
-func mul(a, b int){
+func mul(a, b int)int{
 	return a*b
 }
 

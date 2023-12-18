@@ -2,32 +2,29 @@ package main
 
 import "fmt"
 
-func add(a,b int){
-	return a+b
-}
-func mul(a,b int){
-	return a*b
-}
+type opFunc func(a,b int) int
 
-func getOperator(op string)func(int,int)int{
+func getOperator(op string) opFunc{
 
-	if op == "+" {
-		return func(a,b, int)int {
-			return a+b
-		}
-	}else if op == "*" {
-		return func(a,b, int)int {
-			return a*b
-		}
-	}else{
-		return nil
+	switch op {
+		case "+":
+
+			return func(a,b int)int {
+			//Go에서 함수 리터럴(익명함수, 람다 등)
+				return a+b
+			}
+		case "*":
+			return func(a,b int)int {
+				return a*b
+			}
+			default :
+				return nil
 	} 
 }
 
 func main() {
-	var operator func(int, int) int
-	operator = getOperator("*")
+	fn := getOperator("*")
 
-	var result = operator(3,4)
+	var result = fn(3,4)
 	fmt.Println(result)
 }
